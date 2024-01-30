@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+    }
+
+    .sun, .moon {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ffd700; 
+      position: absolute;
+      animation: eclipse 4s infinite alternate;
+    }
+
+    .moon {
+      background-color: #888; 
+      animation-delay: 2s;
+    }
+
+    @keyframes eclipse {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50px);
+      }
+    }
+  </style>
+  <title>Eclipse Animation</title>
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="moon"></div>
+</body>
+</html

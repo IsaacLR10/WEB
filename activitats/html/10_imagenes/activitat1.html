@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+img {
+	width: 100%; 
+	aspect-ratio: 1 / 1; 
+	object-fit: cover; 
+	object-position: center; 
+	border-radius: 50%; 
+}
+
+:root {
+      --altura-rectangulo: 50px;   }
+.rectangulo {
+  height: var(--altura-rectangulo); 
+  width: calc(var(--altura-rectangulo) * 2); 
+  background-color: #3498db; 
+}
+
+</style>
+<body>
+	<div class="chat-container">
+        <div class="message user1">
+            <div class="avatar"></div>
+            <div class="message-text">
+                <div class="name">Melody</div>
+                <div>Te quiero!</div>
+                <div class="timestamp">10:00 AM</div>
+            </div>
+        </div>
+<br>
+<br>
+        <div class="message user2">
+            <div class="avatar"></div>
+            <div class="message-text">
+                <div class="name">Isaac</div>
+                <div>y yo tambieeeen</div>
+                <div class="timestamp">10:05 AM</div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

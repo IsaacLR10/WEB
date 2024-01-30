@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .invert-filter {
+            filter: invert(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .image-container:hover .invert-filter {
+            filter: invert(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="invert-filter" src="../../img/Skeleton2.jpg" alt="Esqueleto">
+    </div>
+</body>
+</html>

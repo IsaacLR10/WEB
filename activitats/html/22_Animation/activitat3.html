@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #cookieContainer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            opacity: 0;
+            animation: fade-in 1s forwards;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Mensaje de Cookies</title>
+</head>
+<body>
+
+<div id="cookieContainer">
+    <p>Este sitio utiliza cookies. Al continuar, aceptas el uso de cookies.</p>
+    <button onclick="aceptarCookies()">Aceptar</button>
+</div>
+
+</body>
+<script>
+    function aceptarCookies() {
+        var cookieContainer = document.getElementById("cookieContainer");
+        cookieContainer.style.display = "none";
+    }
+</script>
+</html>
