@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .noria {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .rueda {
+      position: absolute;
+      border-radius: 50%;
+      background-color: #3498db;
+      animation: giraInfinito 10s linear infinite;
+    }
+
+    .grande {
+      width: 150px;
+      height: 150px;
+      top: 25px;
+      left: 25px;
+    }
+
+    .chica {
+      width: 80px;
+      height: 80px;
+      top: 60px;
+      left: 60px;
+    }
+
+    @keyframes giraInfinito {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <title>Noria</title>
+</head>
+<body>
+  <div class="noria">
+    <div class="rueda grande"></div>
+    <div class="rueda chica"></div>
+  </div>
+</body>
+</html>

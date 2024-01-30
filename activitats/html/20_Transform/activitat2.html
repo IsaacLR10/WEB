@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .modal {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        
+        .modal:hover {
+            transform: translate(-50%, -50%) scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">Modal</div>
+</body>
+</html>

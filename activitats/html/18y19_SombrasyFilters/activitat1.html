@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .grayscale-filter {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .image-container:hover .grayscale-filter {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="grayscale-filter" src="../../img/gato.jpg" alt="Imagen">
+    </div>
+</body>
+</html>

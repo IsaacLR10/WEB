@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .circle-red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        
+        .circle-blue {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 255, 0.5);
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: margin-left 0.3s ease;
+        }
+
+       
+        .circle-blue:hover {
+            margin-left: -50px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-red"></div>
+    <div class="circle-blue"></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #clock {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 10px solid #333;
+            border-radius: 50%;
+        }
+
+        .hand {
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #333;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            transform: translateX(-50%) rotate(90deg);
+            animation: rotateHand 60s linear infinite;
+        }
+
+        .minute-hand {
+            height: 40px;
+            background-color: #666;
+            animation: rotateMinuteHand 3600s linear infinite;
+        }
+
+        .hour-hand {
+            height: 30px;
+            background-color: #999;
+            animation: rotateHourHand 43200s linear infinite;
+        }
+
+        @keyframes rotateHand {
+            to {
+                transform: translateX(-50%) rotate(450deg);
+            }
+        }
+
+        @keyframes rotateMinuteHand {
+            to {
+                transform: translateX(-50%) rotate(3600deg);
+            }
+        }
+
+        @keyframes rotateHourHand {
+            to {
+                transform: translateX(-50%) rotate(21600deg);
+            }
+        }
+    </style>
+    <title>Reloj Animado</title>
+</head>
+<body>
+
+<div id="clock">
+    <div class="hand"></div>
+    <div class="hand minute-hand"></div>
+    <div class="hand hour-hand"></div>
+</div>
+
+</body>
+</html>
