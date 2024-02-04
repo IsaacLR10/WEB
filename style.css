@@ -12,8 +12,7 @@ body {
 
 }
 
-.wrapper,
-.portafolio{
+.wrapper{
     inline-size: 100vw;
     block-size: 100vh;
     background-color: #191c32;
@@ -141,6 +140,15 @@ span{
     margin-block-end: 1em;
 }
 
+.portafolio{
+    width: 100vw;
+    background-color: #191c32;
+    color:#fff;
+
+}
+
+
+
 .portfolio-headings{
     inline-size: 100vw;
     padding: 5em;
@@ -160,7 +168,9 @@ span{
 
 .card{
     inline-size: 300px;
-    
+    color:#fff;
+    height: 350px;
+    background-color: rgb(18, 31, 108) ;
 }
 
 .card__img{
@@ -189,14 +199,23 @@ span{
 }
 
 .card .project-details {
-    display: flex;
-    align-self: center;
+    margin: 0 auto;
     margin: 1em;
     width: 70%;
-    text-align: center;
+    
+   
 }
 
-.project-details a{
+.card .project-details a{
     text-decoration: none;
-    color: #191c32
+    color: #191c32;
+    text-transform: uppercase;
+}
+
+.proyect-details-content{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 1em;
+
 }
