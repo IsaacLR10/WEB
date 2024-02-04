@@ -166,5 +166,37 @@ span{
 .card__img{
     inline-size: 100%;
     block-size: 150px;
-    background-image: 
+    background-image: url(../Web/activitats/img/infoinfo.jpg); 
+    background-size: cover;
+}
+
+.card__title{
+    padding: 20px;
+}
+
+.card__projects-links{
+    display: felx;
+    justify-content: space-evenly;
+}
+
+.card__projects-links a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.card__projects-links i {
+    font-size: 1.5em;
+}
+
+.card .project-details {
+    display: flex;
+    align-self: center;
+    margin: 1em;
+    width: 70%;
+    text-align: center;
+}
+
+.project-details a{
+    text-decoration: none;
+    color: #191c32
 }
